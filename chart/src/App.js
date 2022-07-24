@@ -79,20 +79,20 @@ const data = [
   {
     task1: 450,
     task3: 450,
-    task2: 60,
-    task4: 60,
+    task2: 100,
+    task4: 100,
   },
   {
     task1: 600,
     task3: 600,
-    task2: 600,
-    task4: 600,
+    task2: 400,
+    task4: 400,
   },
   {
     task1: 500,
     task3: 500,
-    task2: 500,
-    task4: 500,
+    task2: 600,
+    task4: 600,
   },
   {
     task1: 180,
@@ -105,7 +105,7 @@ const data = [
 function App() {
   return (
     <>
-      <h3> &nbsp; Your Work Summary</h3>
+      <h3> &nbsp; Your work summary</h3>
 
       <h4>
         {" "}
@@ -115,24 +115,24 @@ function App() {
         <button className="btn1" type="submit">
           Daily
         </button>
-        <button className="btn2">Monthly</button>&nbsp;&nbsp;&nbsp;
+        <button className="btn2">Monthly</button>&nbsp;&nbsp;&nbsp;&nbsp; 
       </span>
 
-      <h3>
+      <h2>
         <span class="right">
-          <span class="dot1"></span>&nbsp;This Month &nbsp;&nbsp;&nbsp;
+          <span class="dot1"></span>&nbsp;This Month &nbsp;&nbsp;&nbsp;&nbsp;
         </span>{" "}
         <span class="right">
-          <span class="dot"></span>&nbsp;Last Month &nbsp;
+          <span class="dot"></span>&nbsp;Last Month &nbsp;&nbsp;&nbsp;&nbsp;
         </span>{" "}
-      </h3>
+      </h2>
       <ResponsiveContainer width="98%" aspect={3}>
         <LineChart
           width={500}
           height={300}
           data={data}
           margin={{
-            top: 15,
+            top: 35,
             right: 30,
             left: 20,
             bottom: 5,
@@ -145,7 +145,7 @@ function App() {
             stroke="#243240"
           />
 
-          <YAxis tick={{ fill: "#A9A9A9	" }} />
+          <YAxis tick={{ fill: "#A9A9A9" }} />
           <Tooltip
             contentStyle={{ backgroundColor: "#8884d8", color: "#fff" }}
             itemStyle={{ color: "#fff" }}
@@ -156,9 +156,9 @@ function App() {
             dataKey="task1"
             stroke="#246CF9"
             strokeWidth="5"
-            dot={{ fill: "#2e4355", stroke: "#246CF9", strokeWidth: 2, r: 5 }}
+            dot={{ fill: "#246CF9", stroke: "#246CF9", strokeWidth: 2, r: 0 }}
             activeDot={{
-              fill: "#2e4355",
+              fill: "#246CF9",
               stroke: "#246CF9",
               strokeWidth: 6,
               r: 10,
@@ -168,7 +168,7 @@ function App() {
           <Line
             type="line"
             dataKey="task3"
-            filter="blur(14px)"
+            filter="blur(18px)"
             stroke="#246CF9"
             strokeWidth="6"
           />
@@ -178,24 +178,36 @@ function App() {
             dataKey="task2"
             stroke="#FA2256"
             strokeWidth="6"
-          />
-          <Line
-            type="line"
-            dataKey="task4"
-            filter="blur(14px)"
-            stroke="#FA2256"
-            strokeWidth="6"
-            dot={{ fill: "#2e4355", stroke: "#FA2256", strokeWidth: 2, r: 5 }}
+            dot={{ fill: "#FA2256", stroke: "#FA2256", strokeWidth: 2, r: 1 }}
             activeDot={{
-              fill: "#2e4355",
+              fill: "#FA2256",
               stroke: "#FA2256",
               strokeWidth: 5,
               r: 10,
             }}
           />
+          <Line
+            type="line"
+            dataKey="task4"
+            filter="blur(18px)"
+            stroke="#FA2256"
+            strokeWidth="6"
+          />
         </LineChart>
       </ResponsiveContainer>
-      <h1> &nbsp; 9845</h1>
+
+      <span class="left"> 
+        <h1>&nbsp;9845</h1> 
+      </span>
+
+            
+      <button className="bottom_btn"> 829 </button>
+
+      
+      <div className="signup">
+        Sign-Ups past 30 days
+      </div>
+      
 
       <div class="card">
         <div class="container">

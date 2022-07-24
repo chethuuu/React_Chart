@@ -17,28 +17,24 @@ code {
     monospace;
 }
 
-h2 {color:#fff;}
+h2 {color:#fff;
+  font-size: 20px}
 
 h1 {color:#fff;
   text-align: left;
+  font-size: 60px;
 }
 
 h3 {
   color:#fff;
   text-align: left;
+  font-size: 30px;
 }
 
 
-h4 {color:#808080;
-  text-align: left;}
-
-.ch {
-  width: 100px;
-  height: 100px;
-  color: white;
-  background: rgba(0,0,0,0.3);
-  backdrop-filter: blur(10px);
-  font-size: 50px;
+h4 {color:#757B8C;
+  text-align: left;
+font-size: 20px
 }
 
 .right{
@@ -64,7 +60,7 @@ h4 {color:#808080;
 }
 
 .btn1 {
-  background-color: #2d09fc;
+  background-color: #246CF9;
   border: none;
   color: white;
   padding: 5px 15px;
@@ -75,7 +71,7 @@ h4 {color:#808080;
 }
 
 .btn2 {
-  background-color: #757B8C; 
+  background-color: #282C38; 
   border: white;
   color: white;
   padding: 5px 15px;
@@ -85,34 +81,25 @@ h4 {color:#808080;
   font-size: 16px;
 }
 
-Line .stroke {
-  color: deeppink;
-  border: none;
-  background: rgb(214, 214, 214);
-  
-}
 
 .card {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 8px;
+  width: 280px;
+  height: 160px;
 
-/* Auto layout */
+  position: absolute;
+  left: 55.71%;
+  right: 16.94%;
+  top: 33%;
+  bottom: 48%;
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 10px;
-gap: 8px;
-width: 250px;
-height: 120px;
-
-position: absolute;
-left: 55.71%;
-right: 16.94%;
-top: 23%;
-bottom: 48%;
-
-background: rgba(60, 66, 84, 0.5);
+  background: rgba(60, 66, 84, 0.5);
 /* Base/Grey 60 */
 
 border: 1px solid #3C4254;
@@ -124,5 +111,29 @@ border-radius: 8px;
 
 .container {
   color: white;
-  margin-top: -20px;
+  margin-top: -28px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.signup {
+  margin-top: -40px;
+  margin-right: 680px;
+  color: white;
+  font-size: 25px;
+}
+
+.bottom_btn {
+  align-items: left;
+  padding: 2px 8px;
+  font-size: 20px;
+  gap: 4px;
+  color: #30E0A1;
+  width: 85px;
+  height: 45px;
+  background: rgba(48, 224, 161, 0.2);
+  border-radius: 6px;
+  border: none;
+  margin-right: 1050px;
+  margin-top: 65px;
 }
