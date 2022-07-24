@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #132737 ;
+  background: #1E1F25;
+border-radius: 20px;
   text-align: center;
   margin-top:2em ;
 
@@ -40,4 +41,88 @@ h4 {color:#808080;
   font-size: 50px;
 }
 
+.right{
+  float:right;
+}
 
+.left{
+  float:left;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #246CF9; border-radius: 50%;
+  display: inline-block;
+}
+
+.dot1 {
+  height: 12px;
+  width: 12px;
+  background-color: 	#FF1493; border-radius: 50%;
+  display: inline-block;
+}
+
+.btn1 {
+  background-color: #2d09fc;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn2 {
+  background-color: #757B8C; 
+  border: white;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+Line .stroke {
+  color: deeppink;
+  border: none;
+  background: rgb(214, 214, 214);
+  
+}
+
+.card {
+  box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 10px;
+gap: 8px;
+width: 250px;
+height: 120px;
+
+position: absolute;
+left: 55.71%;
+right: 16.94%;
+top: 23%;
+bottom: 48%;
+
+background: rgba(60, 66, 84, 0.5);
+/* Base/Grey 60 */
+
+border: 1px solid #3C4254;
+backdrop-filter: blur(14px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 8px;
+}
+
+.container {
+  color: white;
+  margin-top: -20px;
+}
