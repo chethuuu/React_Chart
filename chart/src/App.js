@@ -1,5 +1,7 @@
 import "./App.css";
 
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 import {
   LineChart,
   Line,
@@ -201,7 +203,7 @@ function App() {
       </span>
 
             
-      <button className="bottom_btn"> 829 </button>
+      <button className="bottom_btn"> <i className="fa fa-arrow-up"> 829</i></button>
 
       
       <div className="signup">
@@ -213,9 +215,9 @@ function App() {
         <div class="container">
           {" "}
           <br />
-          <span class="dot"></span>&nbsp;Last Month
+          <span class="dot"></span>&nbsp;Last Month &nbsp;<i className="fa fa-long-arrow-up up">&nbsp; 2.36%</i> 
            <br /> <br /> 
-          <span class="dot1"></span>&nbsp;This Month
+          <span class="dot1"></span>&nbsp;This Month &nbsp;<i className="fa fa-long-arrow-down down">&nbsp; 2.36%</i> 
         </div>
       </div>
     </>
