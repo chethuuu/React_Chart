@@ -1,6 +1,6 @@
 import "./App.css";
 
-import '../node_modules/font-awesome/css/font-awesome.min.css';
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 import {
   LineChart,
@@ -37,28 +37,26 @@ const data = [
     task4: 160,
   },
   {
-    task1: 470,
-    task3: 470,
+    task1: 220,
+    task3: 220,
     task2: 180,
     task4: 180,
   },
   {
-    task1: 120,
-    task3: 120,
+    task1: 600,
+    task3: 600,
     task2: 510,
     task4: 510,
   },
   {
     task1: 180,
     task3: 180,
-    task2: 420,
-    task4: 420,
+    task2: 80,
+    task4: 80,
   },
   {
     task1: 590,
-    task3: 590,
     task2: 440,
-    task4: 440,
   },
   {
     task1: 430,
@@ -113,21 +111,23 @@ function App() {
         {" "}
         <span class="left">&nbsp; Nov - July</span>
       </h4>
-      <span class="right">
+      
+
+      <div>
+        <div className="this">
+          <span class="dot1"></span>&nbsp; This Month &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div className="last">
+          <span class="dot"></span>&nbsp; Last Month &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="daily">
         <button className="btn1" type="submit">
           Daily
         </button>
-        <button className="btn2">Monthly</button>&nbsp;&nbsp;&nbsp;&nbsp; 
-      </span>
+        <button className="btn2">Monthly</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      </div>
 
-      <h2>
-        <span class="right">
-          <span class="dot1"></span>&nbsp;This Month &nbsp;&nbsp;&nbsp;&nbsp;
-        </span>{" "}
-        <span class="right">
-          <span class="dot"></span>&nbsp;Last Month &nbsp;&nbsp;&nbsp;&nbsp;
-        </span>{" "}
-      </h2>
       <ResponsiveContainer width="98%" aspect={3}>
         <LineChart
           width={500}
@@ -147,11 +147,14 @@ function App() {
             stroke="#243240"
           />
 
+          <span class="view1"></span>
+
           <YAxis tick={{ fill: "#A9A9A9" }} />
           <Tooltip
             contentStyle={{ backgroundColor: "#8884d8", color: "#fff" }}
             itemStyle={{ color: "#fff" }}
             cursor={false}
+            display={false}
           />
           <Line
             type="line"
@@ -169,7 +172,7 @@ function App() {
 
           <Line
             type="line"
-            dataKey="task3"
+            dataKey="task1"
             filter="blur(18px)"
             stroke="#246CF9"
             strokeWidth="6"
@@ -190,7 +193,7 @@ function App() {
           />
           <Line
             type="line"
-            dataKey="task4"
+            dataKey="task2"
             filter="blur(18px)"
             stroke="#FA2256"
             strokeWidth="6"
@@ -198,26 +201,26 @@ function App() {
         </LineChart>
       </ResponsiveContainer>
 
-      <span class="left"> 
-        <h1>&nbsp;9845</h1> 
+      <span class="left">
+        <h1>&nbsp;9845</h1>
       </span>
 
-            
-      <button className="bottom_btn"> <i className="fa fa-arrow-up"> 829</i></button>
+      <button className="bottom_btn">
+        {" "}
+        <i className="fa fa-arrow-up"> 829</i>
+      </button>
 
-      
-      <div className="signup">
-        Sign-Ups past 30 days
-      </div>
-      
+      <div className="signup">Sign-Ups past 30 days</div>
 
       <div class="card">
         <div class="container">
           {" "}
           <br />
-          <span class="dot"></span>&nbsp;Last Month &nbsp;<i className="fa fa-long-arrow-up up">&nbsp; 2.36%</i> 
-           <br /> <br /> 
-          <span class="dot1"></span>&nbsp;This Month &nbsp;<i className="fa fa-long-arrow-down down">&nbsp; 2.36%</i> 
+          <span class="dot"></span>&nbsp; Last Month &nbsp;
+          <i className="fa fa-long-arrow-up up"> &nbsp;  2.36%</i>
+          <br /> <br />
+          <span class="dot1"></span>&nbsp; This Month &nbsp;
+          <i className="fa fa-long-arrow-down down"> &nbsp;  2.36%</i>
         </div>
       </div>
     </>
